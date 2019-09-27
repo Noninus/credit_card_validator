@@ -30,7 +30,7 @@ class CreditCardValidator {
   /// Set Card Types List
   static const List<String> _cardTypesList = [
     "VISA",
-    "MASTERCARD",
+    "MASTER",
     "DISCOVER",
     "AMEX",
     "DINERS",
