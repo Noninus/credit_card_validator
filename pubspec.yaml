@@ -1,8 +1,9 @@
 name: credit_card_validator
-description: A dart package to check if card number is valid and also returns card type as well.
-version: 1.0.4
-author: Preeth Prathapan<preethzcodez.dll@gmail.com>(Creator) and Rafael Nonino Filho<rafinha.nonino7@gmail.com>(Implemented support for ELO)
-homepage: https://github.com/preethzcodez/credit_card_validator.git
+description: A dart package to check if card number is valid and also returns card type as well with ELO support.
+version: 1.0.5
+author: Preeth Prathapan<preethzcodez.dll@gmail.com>
+uploader: Rafael Nonino Filho<rafinha.nonino7@gmail.com>(Implemented support for ELO)
+homepage: https://github.com/Noninus/credit_card_validator.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

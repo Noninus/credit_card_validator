@@ -19,7 +19,6 @@ class _MyApp extends State<MyApp> {
   // Initial State
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     // Set A Sample Card Value - VISA Card
