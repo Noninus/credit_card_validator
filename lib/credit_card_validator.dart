@@ -3,7 +3,7 @@ library credit_card_validator;
 class CreditCardValidator {
   /// Set RegEx For All Cards
   static const String _VISA = "^4[0-9]{12}(?:[0-9]{3})?\$";
-  static const String _MASTERCARD =
+  static const String _MASTER =
       "^(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}\$";
   static const String _DISCOVER = "^6(?:011|5[0-9]{2})[0-9]{12}\$";
   static const String _AMEX = "^3[47][0-9]{13}\$";
@@ -19,7 +19,7 @@ class CreditCardValidator {
   /// Add RegEx Cards Into List
   static const List<String> regexList = [
     _VISA,
-    _MASTERCARD,
+    _MASTER,
     _DISCOVER,
     _AMEX,
     _DINERS,
@@ -40,12 +40,12 @@ class CreditCardValidator {
 
   /// Combined RegEx
   static RegExp _regex = new RegExp("^(?:(?<visa>4[0-9]{12}(?:[0-9]{3})?)|" +
-      "(?<mastercard>5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}|" +
+      "(?<master>5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}|" +
       "(?<discover>6(?:011|5[0-9]{2})[0-9]{12})|" +
       "(?<amex>3[47][0-9]{13})|" +
       "(?<diners>3(?:0[0-5]|[68][0-9])[0-9]{11})|" +
       "(?<jcb>(?:2131|2100|1800|3\\d{4})\\d{11}))|" +
-      "(?<elo>((((636368)|(438935)|(504175)|(451416)|(636297))\\d{0,10})|((5067)|(4576)|(4011))\\d{0,12}))\$");
+      "(?<elo>(?:((((636368)|(438935)|(504175)|(451416)|(636297))\\d{0,10})|((5067)|(4576)|(4011))\\d{0,12})))\$");
 
   // Get Card Data - Card Type and isValid Number as Map
   static Map<String, dynamic> getCard(String cardNumber) {
