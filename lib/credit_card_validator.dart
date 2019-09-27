@@ -10,7 +10,7 @@ class CreditCardValidator {
   static const String _DINERS = "^3(?:0[0-5]|[68][0-9])[0-9]{11}\$";
   static const String _JCB = "^(?:2131|2100|1800|3\\d{4})\\d{11}\$";
   static const String _ELO =
-      "^((((636368)|(438935)|(504175)|(451416)|(636297))\d{0,10})|((5067)|(4576)|(4011))\d{0,12})\$";
+      "^((((636368)|(438935)|(504175)|(451416)|(636297))\\d{0,10})|((5067)|(4576)|(4011))\\d{0,12})\$";
 
   /// Set Map Key
   static const String cardType = "CardType";
